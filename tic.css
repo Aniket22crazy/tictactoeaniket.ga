@@ -1,0 +1,351 @@
+@media screen and (max-width: 800px) {
+    body .gamecontainer{
+    flex-wrap: wrap ;  
+    }    
+}
+.cover{
+    width: 80%;
+    right: 191px;
+    top: 106px;
+    height: 80%;
+    position: absolute;
+    z-index: 0;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+    box-shadow: 15px 15px 20px rgb(110 110 110 / 22%), -15px -15px 20px #ffffff63;
+}
+.night .cover{
+    
+    box-shadow: 15px 15px 20px rgba(110, 110, 110, 0.201), -15px -15px 20px #7a7a7a40;
+}
+nav ul{
+    list-style-type: none;
+}
+.aaa{
+    position: absolute;
+    z-index: 0;
+    right: 10px;
+    top: -6px;
+    font-size: 20px;
+    animation-name: ani;
+     animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction:normal;
+}
+.night .aaa{
+    animation-name: Aniket;
+}
+nav{
+    background-color: rgb(82, 0, 110);
+    color: #ffaeff;
+    height: 50px;
+    font-size: 30px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Rubik Gemstones', cursive;
+}
+.night nav{
+    background-color: rgb(255 0 157);
+    color: white;
+    z-index: 1;
+}
+body{
+    background-color: rgb(250, 215, 232);
+    font-family: 'Rubik Gemstones', cursive;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.gamecontainer{
+    padding: 100px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: fit-content;
+
+}
+.voice{
+    border-color: transparent;
+    position: absolute;
+    z-index: 1;
+    width: 54px;
+    height: 54px;
+    border-radius: 100px;
+    transform: translate(-805px, -86px);
+    display: flex;
+}
+.mute img{
+    display: block;
+    transform: translate(-12px, -10px);
+    width: 60px
+}
+.unmute img{
+    display: none;
+    transform: translate(-18px, -8px);
+    width: 75px;
+}
+.container{
+    display: grid;
+    z-index: 1;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    position: relative;
+}
+.box{
+    border: 2px solid black;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+    cursor: pointer;
+}
+.box:hover{
+    background-color:rgba(240, 146, 243, 0.308) ;
+}
+.gameinfo{
+    padding: 0 34px;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom:  0;
+}
+.imgbox1 img{
+    display: flex;
+    width :280px;
+    z-index: 1;
+    transition:width 2s ease-in-out;
+    transform: translate(170px,45px);
+}
+.imgbox2 img{
+    display: none;
+    z-index: 1;
+    width :500px;
+    transition: width 2s ease-in-out;
+    transform: translate(70px);
+}
+#btn{
+    margin: 10px 20px;
+    padding: 10px;
+    color: rgb(122, 24, 151);
+    z-index: 1;
+    border-radius: 15px;
+    background-color: rgb(250, 215, 232);
+    border-color: transparent;
+    font-family: 'Rubik Gemstones', cursive;
+    box-shadow: 5px 5px 5px 0.5px rgba(128, 128, 128, 0.148),-5px -5px 5px 0.5px rgba(255, 255, 255, 0.356);
+}
+#btn:hover{
+    color: rgb(243, 146, 162);
+    z-index: 1;
+    font-family: 'Rubik Gemstones', cursive;
+    box-shadow: inset 5px 5px 5px 0.5px rgba(128, 128, 128, 0.144),inset -5px -5px 5px 0.5px rgba(255, 255, 255, 0.406);  
+}
+.night #btn{
+    color: #fff;  
+    background-color: rgb(218, 68, 118);
+    z-index: 1;
+    box-shadow: 5px 5px 5px 0.5px rgba(105, 105, 105, 0.425),-5px -5px 5px 0.5px rgba(50, 50, 50, 0.215)
+}
+
+.night #btn:hover{
+    color: rgb(222, 254, 41);
+    cursor: pointer;
+    z-index: 1;
+    box-shadow: inset 5px 5px 5px 0.5px rgba(112, 112, 112, 0.301),inset -5px -5px 5px 0.5px rgba(40, 40, 40, 0.084); 
+}
+
+.info{
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 30px 30px;
+    z-index: 1;
+    margin: 10px 20px;
+    font-family: 'Rubik Gemstones', cursive;
+}
+.gameinfo h1{
+    font-family: 'Rubik Gemstones', cursive;
+    animation-name: Aniket;
+    animation-duration: 5s;
+    z-index: 1;
+    font-size: 50px;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction:normal;
+}
+.gameinfo h1:hover{
+    font-family: 'Rubik Gemstones', cursive;
+    z-index: 1;
+    cursor: pointer;
+    color:rgb(103, 0, 141) ;
+}
+.line{
+    width:25vw;
+    height: 3px;
+    border: 3px solid black;
+    position: absolute;
+    transform: translate(10px,10px);
+    rotate: 0deg;
+    background-color: #3e005b74;
+    z-index: 1;
+    border: 3px solid transparent;
+    display: none;
+   
+}
+.night .line{
+    background-color: #e06de6b0;
+}
+.night .gameinfo h1{
+    z-index: 1;
+    animation-name: ani;
+    animation-duration: 10s;
+    font-size: 50px;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction:normal;
+}
+@keyframes ani {
+    
+    0%{
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+    }
+    15%{
+        color: rgb(255, 0, 157);
+        }
+    30%{
+        color: rgb(188, 89, 255);
+        }
+    46%{
+        color: rgb(243, 146, 162);
+    }
+    61%{
+        color: rgb(204, 92, 248);
+        }
+    77%{
+        color: rgb(255, 0, 217);
+        }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+
+@keyframes Aniket {
+    
+    0%{
+        color: black;
+        border-radius: 5px;
+    }
+    15%{
+        color: rgb(46, 0, 92);
+        }
+    30%{
+        color: rgb(130, 0, 130);
+        }
+    46%{
+        color: rgb(243, 146, 162);
+    }
+    61%{
+        color: rgb(130, 0, 130);
+        }
+    77%{
+        color: rgb(46, 0, 92);
+        }
+    100%{
+        color: black;
+    }
+}
+label{
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
+    border: 2px solid;
+    border-radius: 20px;
+}
+label:before{
+    position: absolute;
+    content: '';
+    width:20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.4s;
+}
+label.active:before{
+    left: 24px;
+    z-index: 1;
+    background: #000;
+}
+.night{
+    background: rgba(11, 11, 11,0.95);
+    z-index: 1;
+    color: #fff;
+}
+.night .box{
+    border:4px solid white ;
+}
+.night .br-0{
+    border-right: 0;
+}
+.night .bl-0{
+    border-left: 0;
+}
+.night .bt-0{
+    border-top: 0;
+}
+.night .bb-0{
+    border-bottom:  0;
+}
+.imgbox5 img{
+    display: none;
+    z-index: -1;
+    position: absolute;
+    top: 277px;
+    right: 822px;
+    transition: width 2s ease-in-out;
+    transform: translate(70px);
+}
+
+.imgbox3 img{
+    display: none;
+    z-index: -1;
+    position: absolute;
+    right: 14px;
+    top: 268px;
+    transition: width 2s ease-in-out;
+    transform: translate(70px);
+}
+
+
+.imgbox4 img{    
+    display: none;
+    z-index: -1;
+    position: absolute;
+    left: -97px;
+    top: 135px;
+    transition: width 2s ease-in-out;
+    transform: translate(70px);
+}
